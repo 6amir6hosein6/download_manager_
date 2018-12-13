@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Download_Manager_">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/run1448817572/Download_Manager_.jar!/" />
+      <root url="file://$USER_HOME$/Desktop/commons-io-2.6" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Desktop/commons-io-2.6/docs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/commons-io-2.6" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/commons-io-2.6" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/commons-io-2.6" recursive="false" type="SOURCES" />
+  </library>
+</component>

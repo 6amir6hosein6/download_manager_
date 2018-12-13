@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="download_manager_.FXMLDocumentController">
+   <children>
+      <Pane layoutY="27.0" prefHeight="73.0" prefWidth="666.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <Button fx:id="new_btn" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#new_bt" prefHeight="47.0" prefWidth="57.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/add_sheet.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="play_btn" layoutX="82.0" layoutY="13.0" mnemonicParsing="false" onAction="#play_bt" prefHeight="47.0" prefWidth="57.0">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/replay-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="stop_btn" layoutX="151.0" layoutY="13.0" mnemonicParsing="false" onAction="#stop_bt" prefHeight="47.0" prefWidth="57.0">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/512x512.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="delete_btn" layoutX="221.0" layoutY="14.0" mnemonicParsing="false" onAction="#delete_bt" prefHeight="47.0" prefWidth="57.0">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/remove-icon-png-26.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="666.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#new_bt" text="New">
+                     <graphic>
+                        <ImageView fitHeight="17.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/add_sheet.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></MenuItem>
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Theme" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="How to use" />
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TableView fx:id="tb" layoutX="-1.0" layoutY="100.0" prefHeight="340.0" prefWidth="666.0">
+         <columns>
+            <TableColumn prefWidth="171.0" text="Name" />
+            <TableColumn prefWidth="84.0" text="Size" />
+            <TableColumn prefWidth="88.0" text="Progress" />
+            <TableColumn prefWidth="322.0" text="URL" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
